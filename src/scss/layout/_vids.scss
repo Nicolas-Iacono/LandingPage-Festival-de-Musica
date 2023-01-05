@@ -1,0 +1,38 @@
+@use 'base/variable' as v;
+@use 'base/mixins' as m;
+
+.video{
+    position: relative;
+    max-height: 60rem;
+    min-height: 50rem;
+    overflow: hidden;
+
+
+    video{
+       width: auto;
+       display: block;
+       @include m.desktop {
+           width: 100%;
+       }
+    }
+}
+.contenido-video{
+    z-index: 1;
+    h2{
+        color: white;
+        font-size: 6rem;
+        margin: 0;
+        
+    }
+    p{
+        background-color: rgb(218, 53, 53);
+       display: inline-block;
+       padding: 1rem 2rem;
+       color: white;
+       font-weight: 700;
+       margin-top: -50px;
+       font-size: 2rem;
+       margin: 0;
+
+    }
+}
